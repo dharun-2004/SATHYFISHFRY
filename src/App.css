@@ -1,42 +1,335 @@
-#root {
-  max-width: 1280px;
+
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Chicle&family=Galindo&family=Lexend+Giga:wght@100..900&display=swap');
+
+/* Navbar styles */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+ 
+}
+
+.navbar-content {
+  max-width: 1600px;
   margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navbar-logo {
+  color: #0a1831;
+  text-decoration: none;
+  font-size: 2.0rem;
+  font-weight: bold;
+  font-family: "Chicle", serif;
+  letter-spacing: 2px;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 2rem;
+}
+
+.navbar-link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  font-size: 1.5rem;
+  padding: 0.3rem 1rem;  
+  border-radius: 2px;    
+  font-family: "Barriecito", system-ui;
+
+  letter-spacing: 2px;
+}
+
+.navbar-link:hover {
+  color: #ffffff;                 
+  background-color: #1a202c;      
+  transform: scale(1.1);          
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  
+}
+
+
+/* Header styles */
+.header {
+  background:
+              url('C:\Users\DHARUN\Desktop\SATHYA FISH FRY\src\assets\cylinder-empty-black-podium-pedestal-product-display-stand-background-3d-rendering.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 64px;
+}
+
+.header-content {
+  max-width: 800px;
+  padding: 3rem;
+}
+
+.header-title {
+  font-size: 3.0rem;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Galindo", sans-serif;
+}
+
+.header-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
+  font-family: "Galindo", sans-serif;
+}
+
+.header-link {
+  display: inline-block;
+  background-color:#232B2B;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.2s;
+ 
+}
+
+.header-link:hover {
+
+  background-color:#283131;
+}
+
+/* Carousel styles */
+.carousel {
+  padding: 4rem 0;
+  background-color: #f7fafc;
+}
+
+.carousel-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.carousel-item {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* About section styles */
+.about {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2d3748;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-item {
   padding: 2rem;
+  background-color: #f7fafc;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-item-title {
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.about-item-description {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Contact section styles */
+.contact {
+  padding: 4rem 0;
+  background-color: #2d3748;
+  color: white;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-number {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.contact-button {
+  background-color: #e53e3e;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.contact-button:hover {
+  background-color: #c53030;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #1a202c;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1e293b;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-item {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+
+  .header-title {
+    font-size: 2.5rem;
+  }
+
+  .header-subtitle {
+    font-size: 1.25rem;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 480px) {
+  /* Navbar */
+  .navbar-content {
+    flex-direction: column;  /* Stack navbar content vertically */
+    align-items: flex-start;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .navbar-toggle {
+    display: block; /* Show toggle button on small screens */
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #0a1831;
+    cursor: pointer;
+  }
 
-.read-the-docs {
-  color: #888;
+  .navbar-list {
+    display: none; /* Initially hide the navbar list */
+    flex-direction: column; /* Stack the links vertically */
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .navbar-list.active {
+    display: flex; /* Show the navbar list when toggled */
+  }
+
+  .navbar-item {
+    margin-left: 0; /* Reset margin for vertical layout */
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .navbar-link {
+    padding: 1rem; /* Add more padding for better touch targets */
+    font-size: 1.2rem;
+  }
+
+  /* Header */
+  .header-content {
+    padding: 2rem;
+    position: relative;
+   bottom: 100px;
+  }
+
+  .header-title {
+    font-size: 2rem;  /* Adjust title size */
+  }
+
+  .header-subtitle {
+    font-size: 1.2rem;  /* Adjust subtitle size */
+  }
+
+  .header-link {
+    font-size: 1rem;  /* Smaller font size for buttons */
+    padding: 0.8rem 1.5rem;
+  }
 }
