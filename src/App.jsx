@@ -17,7 +17,7 @@ function App() {
       <nav className="navbar">
         <div className="navbar-content">
           <div className='logo-name' >
-          <img className='logo' src="src\assets\360_F_199858387_FymKsmjdD0Ss2el9eIstS7Y4UaBg5F6B.webp" alt="" />
+          <img className='logo' src="\360_F_199858387_FymKsmjdD0Ss2el9eIstS7Y4UaBg5F6B.webp" alt="" />
           <a href="/" className="navbar-logo">Sathya Fish Fry</a>
           </div>
           <ul className="navbar-links">
@@ -46,11 +46,11 @@ function App() {
   that keeps you coming back for more!
 </p>
 
-    <a href="#about" className="header-button">About Shop 1</a>
+    <a href="#about" className="header-button">About Shop</a>
   </header>
 
   <div className='head2'>
-    <img src="src\assets\2301.i105.026.S.m005.c13.isometric sea food market.jpg" alt="Seafood Market Illustration" />
+    <img src="\2301.i105.026.S.m005.c13.isometric sea food market.jpg" alt="Seafood Market Illustration" />
   </div>
 </div>
 
@@ -58,20 +58,20 @@ function App() {
 
       {/* Menu Section (Carousel) */}
       <div className='menu-all' >
-      <h1 className="menu">MENU  <img className='arro' src="src/assets/arrow_downward_38dp_000000_FILL0_wght700_GRAD200_opsz40.svg" alt="" /> </h1>
+      <h1 className="menu">MENU  <img className='arro' src="/arrow_downward_38dp_000000_FILL0_wght700_GRAD200_opsz40.svg" alt="" /> </h1>
       </div>
       <div className="carousel">
         <div className="carousel-content">
           <div className="carousel-item">
-            <img src="src/assets/istockphoto-1149821046-612x612.jpg" alt="Fish Fry" className="carousel-image" />
+            <img src="/istockphoto-1149821046-612x612.jpg" alt="Fish Fry" className="carousel-image" />
             <h3 className="carousel-1">FISH FRY</h3>
           </div>
           <div className="carousel-item">
-            <img src="src/assets/grilled-fillet-steak-vegetable-salad-plate-generated-by-ai_3_11zon.jpg" alt="Fish Fry" className="carousel-image" />
+            <img src="/grilled-fillet-steak-vegetable-salad-plate-generated-by-ai_3_11zon.jpg" alt="Fish Fry" className="carousel-image" />
             <h3 className="carousel-1">FISH FRY</h3>
           </div>
           <div className="carousel-item">
-            <img src="src/assets/Gemini_Generated_Image_l545nl545nl545nl.jpeg" alt="Fish Fry" className="carousel-image" />
+            <img src="/Gemini_Generated_Image_l545nl545nl545nl.jpeg" alt="Fish Fry" className="carousel-image" />
             <h3 className="carousel-1">FISH FRY</h3>
           </div>
         </div>
@@ -79,15 +79,15 @@ function App() {
       <div className="carousel">
         <div className="carousel-content">
           <div className="carousel-item">
-            <img src="src/assets/istockphoto-1149821046-612x612.jpg" alt="Fish Fry" className="carousel-image" />
+            <img src="/istockphoto-1149821046-612x612.jpg" alt="Fish Fry" className="carousel-image" />
             <h3 className="carousel-1">FISH FRY</h3>
           </div>
           <div className="carousel-item">
-            <img src="src/assets/grilled-fillet-steak-vegetable-salad-plate-generated-by-ai_3_11zon.jpg" alt="Fish Fry" className="carousel-image" />
+            <img src="/grilled-fillet-steak-vegetable-salad-plate-generated-by-ai_3_11zon.jpg" alt="Fish Fry" className="carousel-image" />
             <h3 className="carousel-1">FISH FRY</h3>
           </div>
           <div className="carousel-item">
-            <img src="src/assets/Gemini_Generated_Image_l545nl545nl545nl.jpeg" alt="Fish Fry" className="carousel-image" />
+            <img src="/Gemini_Generated_Image_l545nl545nl545nl.jpeg" alt="Fish Fry" className="carousel-image" />
             <h3 className="carousel-1">FISH FRY</h3>
           </div>
         </div>
@@ -97,7 +97,7 @@ function App() {
       <section id="about" className="about">
         
       <div className='menu-all' >
-      <h1 className="menu1">ABOUT <img className='arro' src="src/assets/arrow_downward_38dp_000000_FILL0_wght700_GRAD200_opsz40.svg" alt="" /> </h1>
+      <h1 className="menu1">ABOUT <img className='arro' src="/arrow_downward_38dp_000000_FILL0_wght700_GRAD200_opsz40.svg" alt="" /> </h1>
       </div>
         <div className="about-content">
           <div className="about-item">
