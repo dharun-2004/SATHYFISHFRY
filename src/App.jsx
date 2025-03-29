@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import './App.css';
+import CircularGallery from './CircularGallery'; 
 
 function App() {
   const sendMessage = () => {
@@ -15,51 +16,49 @@ function App() {
       {/* Navigation Bar */}
       <nav className="navbar">
         <div className="navbar-content">
-          <a href="#" className="navbar-logo">Sathya Fish Fry</a>
-          <button type="button" className="navbar-toggle">
-            <span className="navbar-toggle-text">Toggle navigation</span>
-          </button>
-          <div className="navbar-links">
-            <ul className="navbar-list">
-              <li className="navbar-item"><a href="#home" className="navbar-link">Home</a></li>
-              <li className="navbar-item"><a href="#about" className="navbar-link">About</a></li>
-              <li className="navbar-item"><a href="#contact" className="navbar-link">Contact</a></li>
-              <li className="navbar-item"><a href="#contact" className="navbar-link">Contact</a></li>
-            </ul>
-          </div>
+          <a href="/" className="navbar-logo">Sathya Fish Fry</a>
+          <ul className="navbar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </nav>
 
       {/* Header Section */}
       <header className="header">
-        <div className="header-content">
-          <h1 className="header-title">Welcome to Our Fish Fry Shop</h1>
-          <p className="header-subtitle">Perfectly Cooked, Always!</p>
-          <div className="header-button">
-            <a href="#about" className="header-link">About Shop</a>
-          </div>
-        </div>
+        <h1>Welcome to Sathya Fish Fry</h1>
+        <p>Perfectly Cooked, Always!</p>
+        <a href="#about" className="header-button">About Shop</a>
       </header>
 
-      {/* Carousel (Images Section) */}
+      {/* Circular Gallery Section */}
+      <section className="gallery-section">
+        <CircularGallery />
+      </section>
+
+      {/* Menu Section (Carousel) */}
+      <h1 className="menu">MENU</h1>
       <div className="carousel">
         <div className="carousel-content">
           <div className="carousel-item">
-            <img src="src\assets\delicious-lobster-gourmet-seafood.jpg" alt="..." className="carousel-image" />
+            <img src="src/assets/istockphoto-1149821046-612x612.jpg" alt="Fish Fry" className="carousel-image" />
+            <h3 className="carousel-1">FISH FRY</h3>
           </div>
           <div className="carousel-item">
-            <img src="src\assets\front-close-view-delicious-fried-fishes-lemon-slices-brown-plate-pepper-mix-colors-table-with-free-space.jpg" alt="..." className="carousel-image" />
+            <img src="src/assets/grilled-fillet-steak-vegetable-salad-plate-generated-by-ai_3_11zon.jpg" alt="Fish Fry" className="carousel-image" />
+            <h3 className="carousel-1">FISH FRY</h3>
           </div>
           <div className="carousel-item">
-            <img src="src\assets\grilled-fillet-steak-vegetable-salad-plate-generated-by-ai.jpg" alt="..." className="carousel-image" />
+            <img src="src/assets/Gemini_Generated_Image_l545nl545nl545nl.jpeg" alt="Fish Fry" className="carousel-image" />
+            <h3 className="carousel-1">FISH FRY</h3>
           </div>
-         
         </div>
       </div>
 
       {/* About Section */}
       <section id="about" className="about">
-        <h2 className="about-title">About Shop</h2>
+        <h2 className="menu">About Shop</h2>
         <div className="about-content">
           <div className="about-item">
             <h6 className="about-item-title">Fresh Fish:</h6>
@@ -85,15 +84,15 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="contact">
         <h2 className="contact-title">Contact Us</h2>
-        <p className="contact-number">8675781280</p>
-        <p className="contact-number">9600938685</p>
+        <p className="contact-number">Ph : 8675781280</p>
+        <p className="contact-number">Ph : 9600938685</p>
         <p className="contact-description">Easy and Fast – Place your order now!</p>
-        <button onClick={sendMessage} className="contact-button">Just Click And Text on WhatsApp</button>
+        <button onClick={sendMessage} className="header-link">Just Click And Text on WhatsApp</button>
       </section>
 
       {/* Footer Section */}
       <footer className="footer">
-        <p className="footer-text">&copy; 2024 Sathya Fish Fry. All rights reserved. Designed by Dharun007</p>
+        <p className="footer-text">&copy; 2024 Sathya Fish Fry. All rights reserved. Designed by Dharun</p>
       </footer>
     </div>
   );

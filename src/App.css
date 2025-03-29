@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Chicle&family=Galindo&family=Lexend+Giga:wght@100..900&display=swap');
 
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 /* Navbar styles */
 .navbar {
   background-color: #ffffff;
@@ -71,7 +74,7 @@
 /* Header styles */
 .header {
   background:
-              url('C:\Users\DHARUN\Desktop\SATHYA FISH FRY\src\assets\cylinder-empty-black-podium-pedestal-product-display-stand-background-3d-rendering.jpg');
+              url('C:\Users\DHARUN\Desktop\SATHYA FISH FRY\src\assets\cylinder-empty-black-podium-pedestal-product-display-stand-background-3d-rendering_11_11zon.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -122,6 +125,12 @@
 }
 
 /* Carousel styles */
+
+.menu{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+}
 .carousel {
   padding: 4rem 0;
   background-color: #f7fafc;
@@ -137,11 +146,13 @@
 }
 
 .carousel-item {
-  border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.carousel-1{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .carousel-image {
   width: 100%;
   height: 250px;
@@ -154,12 +165,6 @@
   background-color: white;
 }
 
-.about-title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color: #2d3748;
-}
 
 .about-content {
   display: grid;
@@ -233,11 +238,11 @@
   background-color: #1a202c;
   color: white;
   text-align: center;
-  padding: 2rem;
+  padding: 0.001rem;
 }
 
 .footer-text {
-  font-size: 0.875rem;
+  font-size: 2rem;
 }
 
 /* Responsive styles */
@@ -331,5 +336,209 @@
   .header-link {
     font-size: 1rem;  /* Smaller font size for buttons */
     padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-link {
+    font-size: 0.8rem;  /* Smaller font size for buttons */
+    padding: 0.5rem 1.2rem;
+  }
+
+}
+
+.gallery-container {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-gradient {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 48px;
+  z-index: 10;
+}
+
+.gallery-gradient-left {
+  left: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #060606 100%);
+}
+
+.gallery-gradient-right {
+  right: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #060606 100%);
+}
+
+.gallery-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.gallery-track {
+  display: flex;
+  height: auto;
+  min-height: 200px;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+
+.gallery-item {
+  position: absolute;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 8%;
+  backface-visibility: hidden;
+}
+
+.gallery-img {
+  pointer-events: none;
+  height: 120px;
+  width: 300px;
+  border-radius: 15px;
+  border: 3px solid #fff;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    padding: 6%;
+  }
+  .gallery-img {
+    height: 100px;
+    width: 220px;
+  }
+}
+
+
+
+
+.app-container {
+  text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #1e293b;  /* Dark blue/gray shade */
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #facc15;  /* Golden yellow color */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  background-color: #facc15;  /* Golden yellow */
+  color: #1e293b;  /* Dark text on hover */
+  border-radius: 5px;
+}
+
+/* Header Section */
+.header {
+  background-image: url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 2rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.header-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #facc15;  /* Golden yellow */
+  color: #1e293b;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #eab308;  /* Darker golden shade */
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .header p {
+    font-size: 1.25rem;
   }
 }
