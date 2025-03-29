@@ -1,7 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import './App.css';
-import CircularGallery from './CircularGallery'; 
+
 
 function App() {
   const sendMessage = () => {
@@ -16,7 +16,10 @@ function App() {
       {/* Navigation Bar */}
       <nav className="navbar">
         <div className="navbar-content">
+          <div className='logo-name' >
+          <img className='logo' src="src\assets\360_F_199858387_FymKsmjdD0Ss2el9eIstS7Y4UaBg5F6B.webp" alt="" />
           <a href="/" className="navbar-logo">Sathya Fish Fry</a>
+          </div>
           <ul className="navbar-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -25,20 +28,54 @@ function App() {
         </div>
       </nav>
 
-      {/* Header Section */}
-      <header className="header">
-        <h1>Welcome to Sathya Fish Fry</h1>
-        <p>Perfectly Cooked, Always!</p>
-        <a href="#about" className="header-button">About Shop</a>
-      </header>
 
-      {/* Circular Gallery Section */}
-      <section className="gallery-section">
-        <CircularGallery />
-      </section>
+
+
+      
+<br /><br />
+      {/* Header Section */}
+      <div className='head-img'>
+  <header className="header">
+    <h1>Welcome to Sathya <span style={{ color: '#eab308', fontFamily:'  Carter One' }}>Fish Fry</span></h1>
+    <p className='p-head' >Perfectly Cooked, Always !</p>
+    <p className='p-par'>
+  Sathya Fish Fry is your go-to destination for delicious, crispy, and flavorful fish fries. <br />
+  Our specialty lies in sourcing the freshest fish, marinating it with handpicked spices. <br />
+  <span style={{ color: '#e53e3e' }}>crispy to perfection</span> <br />
+  Come and enjoy the taste of authentic, home-style fish fry <br />
+  that keeps you coming back for more!
+</p>
+
+    <a href="#about" className="header-button">About Shop</a>
+  </header>
+
+  <div className='head2'>
+    <img src="src\assets\2301.i105.026.S.m005.c13.isometric sea food market.jpg" alt="Seafood Market Illustration" />
+  </div>
+</div>
+
+      
 
       {/* Menu Section (Carousel) */}
-      <h1 className="menu">MENU</h1>
+      <div className='menu-all' >
+      <h1 className="menu">MENU  <img className='arro' src="src/assets/arrow_downward_38dp_000000_FILL0_wght700_GRAD200_opsz40.svg" alt="" /> </h1>
+      </div>
+      <div className="carousel">
+        <div className="carousel-content">
+          <div className="carousel-item">
+            <img src="src/assets/istockphoto-1149821046-612x612.jpg" alt="Fish Fry" className="carousel-image" />
+            <h3 className="carousel-1">FISH FRY</h3>
+          </div>
+          <div className="carousel-item">
+            <img src="src/assets/grilled-fillet-steak-vegetable-salad-plate-generated-by-ai_3_11zon.jpg" alt="Fish Fry" className="carousel-image" />
+            <h3 className="carousel-1">FISH FRY</h3>
+          </div>
+          <div className="carousel-item">
+            <img src="src/assets/Gemini_Generated_Image_l545nl545nl545nl.jpeg" alt="Fish Fry" className="carousel-image" />
+            <h3 className="carousel-1">FISH FRY</h3>
+          </div>
+        </div>
+      </div>
       <div className="carousel">
         <div className="carousel-content">
           <div className="carousel-item">
@@ -58,7 +95,10 @@ function App() {
 
       {/* About Section */}
       <section id="about" className="about">
-        <h2 className="menu">About Shop</h2>
+        
+      <div className='menu-all' >
+      <h1 className="menu1">ABOUT <img className='arro' src="src/assets/arrow_downward_38dp_000000_FILL0_wght700_GRAD200_opsz40.svg" alt="" /> </h1>
+      </div>
         <div className="about-content">
           <div className="about-item">
             <h6 className="about-item-title">Fresh Fish:</h6>
@@ -95,6 +135,9 @@ function App() {
         <p className="footer-text">&copy; 2024 Sathya Fish Fry. All rights reserved. Designed by Dharun</p>
       </footer>
     </div>
+
+
+
   );
 }
 
