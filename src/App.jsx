@@ -46,7 +46,7 @@ function App() {
   that keeps you coming back for more!
 </p>
 
-    <a href="#about" className="header-button">About Shop</a>
+    <a href="#about" className="header-button">About Shop 1</a>
   </header>
 
   <div className='head2'>
