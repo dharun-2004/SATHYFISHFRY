@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="app-container">
-      {/* Navigation Bar */}
+     
       <nav className="navbar">
         <div className="navbar-content">
           <div className="logo-name">
@@ -25,12 +25,12 @@ function App() {
             <a href="/" className="navbar-logo">Sathya Fish Fry</a>
           </div>
 
-          {/* Toggle Button for Small Screens */}
+        
           <button className="navbar-toggler" onClick={toggleMenu}>
             ☰
           </button>
 
-          {/* Navbar Links */}
+         
           <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -55,7 +55,7 @@ function App() {
         </header>
 
         <div className="head2">
-          <img src="public\2301.i105.026.S.m005.c13.isometric sea food market.jpg" alt="Seafood Market Illustration" />
+          <img src="/2301.i105.026.S.m005.c13.isometric sea food market.jpg" alt="Seafood Market Illustration" />
         </div>
       </div>
 
@@ -69,32 +69,18 @@ function App() {
         <div className="carousel-content">
           <div className="carousel-item">
             <img src="/istockphoto-1149821046-612x612.jpg" alt="Fish Fry" className="carousel-image" />
-            <h3 className="carousel-1">FISH FRY</h3>
+            <h3 className="carousel-1">Jilabi Fish </h3>
           </div>
           <div className="carousel-item">
             <img src="/grilled-fillet-steak-vegetable-salad-plate-generated-by-ai_3_11zon.jpg" alt="Fish Fry" className="carousel-image" />
-            <h3 className="carousel-1">FISH FRY</h3>
+            <h3 className="carousel-1"> Jilabi Chilli Fish</h3>
           </div>
           <div className="carousel-item">
             <img src="/Gemini_Generated_Image_l545nl545nl545nl.jpeg" alt="Fish Fry" className="carousel-image" />
-            <h3 className="carousel-1">FISH FRY</h3>
+            <h3 className="carousel-1">Pepper Fish Masala</h3>
           </div>
         </div>
-<br />
-        <div className="carousel-content">
-          <div className="carousel-item">
-            <img src="/istockphoto-1149821046-612x612.jpg" alt="Fish Fry" className="carousel-image" />
-            <h3 className="carousel-1">FISH FRY</h3>
-          </div>
-          <div className="carousel-item">
-            <img src="/grilled-fillet-steak-vegetable-salad-plate-generated-by-ai_3_11zon.jpg" alt="Fish Fry" className="carousel-image" />
-            <h3 className="carousel-1">FISH FRY</h3>
-          </div>
-          <div className="carousel-item">
-            <img src="/Gemini_Generated_Image_l545nl545nl545nl.jpeg" alt="Fish Fry" className="carousel-image" />
-            <h3 className="carousel-1">FISH FRY</h3>
-          </div>
-        </div>
+
       </div>
 
       {/* About Section */}
@@ -104,19 +90,30 @@ function App() {
         </div>
         <div className="about-content">
           <div className="about-item">
-            <img src="public\eat-healthy-restaurant-logo-papercraft-cut-out-style_13_11zon.jpg" alt="" />
+            <div>
+            <img className='all-img-4' src="/eat-healthy-restaurant-logo-papercraft-cut-out-style_13_11zon.jpg" alt="" />
+            </div>
             <h6 className="about-item-title">Fresh Fish:</h6>
             <p className="about-item-description">Fish is fresh, properly cleaned, and free of any unpleasant odors.</p>
           </div>
           <div className="about-item">
+          <div>
+            <img className='all-img-4' src="/6349995.jpg" alt="" />
+            </div>
             <h6 className="about-item-title">Oil Quality:</h6>
             <p className="about-item-description">Clean and high-quality oil with a high smoke point, such as peanut oil, and regularly filtered.</p>
           </div>
           <div className="about-item">
+          <div>
+            <img  className='all-img-4'  src="https://img.freepik.com/free-vector/hand-drawn-zero-waste-eco-friendly-landing-page_1188-488.jpg?ga=GA1.1.1525430827.1743337888&semt=ais_hybrid" alt="" />
+            </div>
             <h6 className="about-item-title">Cleanliness:</h6>
             <p className="about-item-description">Maintain high standards of cleanliness in cooking and serving areas for a safe and pleasant environment.</p>
           </div>
           <div className="about-item">
+          <div>
+            <img  className='all-img-4'  src="/3906326.jpg" alt="" />
+            </div>
             <h6 className="about-item-title">OPENING HOURS</h6>
             <p className="about-item-description">Monday - Sunday: Evening 5 pm to 10 pm</p>
             <h6 className="about-item-title">ADDRESS</h6>

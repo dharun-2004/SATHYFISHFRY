@@ -46,15 +46,7 @@
   width: 70px;
 }
 
-.navbar-logo {
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #141414;
-  letter-spacing: 3px;
 
-}
 
 .navbar-links {
   list-style: none;
@@ -192,6 +184,7 @@
 .carousel {
   padding: 4rem 0;
   background-color: #f7fafc;
+  font-size: 20px;
 }
 
 .carousel-content {
@@ -210,6 +203,8 @@
 
 .carousel-1 {
   text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  
 }
 
 .carousel-image {
@@ -220,36 +215,47 @@
 
 /* About Section */
 .about {
-  padding: 4rem 0;
-  background-color: white;
+  padding: 3rem 1rem;
+  background-color: #e6ebee;
+}
+.all-img-4{
+  height: auto;
+  width: auto;
 }
 
 .about-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
 }
 
 .about-item {
-  padding: 2rem;
-  background-color: #f7fafc;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .about-item-title {
   font-size: 1.25rem;
   color: #2d3748;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .about-item-description {
   color: #4a5568;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 /* Contact Section */
@@ -314,8 +320,11 @@
 
 
 
+
 @media (max-width: 480px) {
  
+
+
 
   .header {
     left: 0;
@@ -323,7 +332,7 @@
   }
 
   .header h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .header p {
@@ -421,7 +430,7 @@
 }
 
 .navbar-logo {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 600;
   color: #14343d;
   text-decoration: none;
@@ -475,7 +484,8 @@
 
 @media (max-width: 768px) {
   .navbar-content {
-      padding: 0.8rem;
+      padding: 0.1rem;
+      font-size: 3px;
   }
 
   .navbar-toggler {
@@ -483,6 +493,7 @@
   }
 
   .navbar-links {
+    
       position: absolute;
       top: 100%;
       left: 0;
@@ -501,8 +512,9 @@
   }
 
   .navbar-links li {
-      padding: 1rem 2rem;
-      border-bottom: 1px solid #eee;
+      padding: 1rem 0rem;
+      border-bottom: 1px solid #f1eeea;
+      
   }
 
   .navbar-links a::after {
@@ -517,6 +529,7 @@
     padding: 0.8rem;
     position: relative;
     right: 20px;
+    
 }
 
 
@@ -525,6 +538,7 @@
   text-decoration: none;
   color: #2d3436;
   font-size: 10px;
+ 
 }
 
 }
