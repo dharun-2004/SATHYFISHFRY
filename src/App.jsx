@@ -95,6 +95,8 @@ function App() {
             </div>
             <h6 className="about-item-title">Fresh Fish:</h6>
             <p className="about-item-description">Fish is fresh, properly cleaned, and free of any unpleasant odors.</p>
+            <p className="about-item-description">Cut pieces are neat, without extra blood or waste.</p>
+            <p className="about-item-description">No extra water or chemicals, just natural freshness.</p>
           </div>
           <div className="about-item">
           <div>
@@ -102,6 +104,7 @@ function App() {
             </div>
             <h6 className="about-item-title">Oil Quality:</h6>
             <p className="about-item-description">Clean and high-quality oil with a high smoke point, such as peanut oil, and regularly filtered.</p>
+            <p className="about-item-description">Clean and good-quality oil, like peanut oil, with a high heat limit.</p>
           </div>
           <div className="about-item">
           <div>
@@ -109,6 +112,7 @@ function App() {
             </div>
             <h6 className="about-item-title">Cleanliness:</h6>
             <p className="about-item-description">Maintain high standards of cleanliness in cooking and serving areas for a safe and pleasant environment.</p>
+            <p className="about-item-description">Regularly clean cooking and serving spaces for a better experience.</p>
           </div>
           <div className="about-item">
           <div>
@@ -122,19 +126,41 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="contact">
-        <h2 className="contact-title">Contact Us</h2>
-        <p className="contact-number">Ph : 8675781280</p>
-        <p className="contact-number">Ph : 9600938685</p>
-        <p className="contact-description">Easy and Fast – Place your order now!</p>
-        <button onClick={sendMessage} className="header-link">Just Click And Text on WhatsApp</button>
-      </section>
+   {/* Contact Section */}
+   <div className='img-con' >
+  
+<section id="contact" className="contact">
+  <h2 className="contact-title">Contact Us</h2>
+  
+  <div className="contact-info">
+    <p className="contact-number"> 8675781280</p>
+    <p className="contact-number"> 9600938685</p>
+  </div>
 
-      {/* Footer Section */}
-      <footer className="footer">
-        <p className="footer-text">&copy; 2024 Sathya Fish Fry. All rights reserved. Designed by Dharun</p>
-      </footer>
+  <p className="contact-description">Easy and Fast – Place your order now!</p>
+
+  <a 
+    href="https://wa.me/918675781280" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="contact-button"
+  >
+    Just Click And Text on WhatsApp
+  </a>
+</section>
+
+<div >
+    <img className='img-1' src="/5124105.jpg" alt="" />
+   </div>
+</div>
+
+{/* Footer Section */}
+<footer className="footer">
+  <p className="footer-text">
+    &copy; {new Date().getFullYear()} Sathya Fish Fry. All rights reserved. <br />
+    Designed by <strong>Dharun</strong>
+  </p>
+</footer>
     </div>
   );
 }
