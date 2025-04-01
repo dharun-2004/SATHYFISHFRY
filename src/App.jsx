@@ -52,6 +52,7 @@ function App() {
             that keeps you coming back for more!
           </p><br />
           <a href="#about" className="header-button">About Shop</a>
+      
         </header>
 
         <div className="head2">

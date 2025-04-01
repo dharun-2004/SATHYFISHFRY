@@ -72,10 +72,7 @@
 }
 
 /* Header Section */
-.header {
-  position: relative;
-  left: 110px;
-}
+
 
 .header h1 {
   font-size: 3rem;
@@ -113,18 +110,19 @@
 
 .head-img {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 90px;
-  gap: 10px;
+  padding: 10px;
+  margin: 20px;
+ 
+
 }
 
 .head2 img {
   max-width: 400px;
   height: auto;
   border-radius: 12px;
-  position: relative;
-  right: 110px;
+ 
 }
 
 .p-par {
@@ -399,16 +397,6 @@
   font-family: "Roboto Condensed", sans-serif;
   
 }
-@media screen and (max-width: 480px) {
-  .footer {
-    font-size: 10px;
-    padding: 10px;
-  }
-
-  .footer-text {
-    line-height: 1.4;
-  }
-}
 
 
 
@@ -478,7 +466,7 @@
   }
 
   .footer-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -801,8 +789,4 @@
     font-size: 0.9rem;
   }
 
-  .footer {
-    font-size: 10px;
-    padding: 8px;
-  }
 }
