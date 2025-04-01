@@ -410,9 +410,7 @@
     padding: 1rem;
   }
 
-  .header h1 {
-    font-size: 1.7rem;
-  }
+
 
   .header p {
     font-size: 1rem;
@@ -639,9 +637,7 @@
     max-width: 1600px;
   }
 
-  .header h1 {
-    font-size: 3rem;
-  }
+
 
   .head2 img {
     max-width: 400px;
@@ -696,9 +692,7 @@
     display: flex;
   }
 
-  .header h1 {
-    font-size: 2rem;
-  }
+
 
   .p-par {
     font-size: 1rem;
@@ -738,7 +732,7 @@
   }
 
   .header h1 {
-    font-size: 1.5rem;
+    font-size:2rem;
   }
 
   .p-par {

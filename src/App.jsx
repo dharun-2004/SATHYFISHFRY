@@ -52,7 +52,6 @@ function App() {
             that keeps you coming back for more!
           </p><br />
           <a href="#about" className="header-button">About Shop</a>
-      
         </header>
 
         <div className="head2">
@@ -141,7 +140,7 @@ function App() {
   <p className="contact-description">Easy and Fast – Place your order now!</p>
 
   <a 
-    href="https://wa.me/919600938685" 
+    href="https://wa.me/918675781280" 
     target="_blank" 
     rel="noopener noreferrer"
     className="contact-button"
