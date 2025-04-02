@@ -140,7 +140,7 @@ function App() {
   <p className="contact-description">Easy and Fast – Place your order now!</p>
 
   <a 
-    href="https://wa.me/918675781280" 
+    href="https://wa.me/919600938685" 
     target="_blank" 
     rel="noopener noreferrer"
     className="contact-button"
